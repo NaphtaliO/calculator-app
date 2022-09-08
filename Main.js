@@ -16,8 +16,8 @@ const Main = () => {
     }, [operator])
 
     const operation = (x) => {
-        let int1 = parseInt(secondText);
-        let int2 = parseInt(text);
+        let int1 = parseFloat(secondText);
+        let int2 = parseFloat(text);
         let result;
         switch (x) {
             case "AC":
@@ -81,6 +81,7 @@ const Main = () => {
                 // setOperator("+/-")
                 let result = parseInt(text);
                 result = result * (-1)
+                result = result.toString();
                 {text == "0" ? null : setText(result)}
             }
         },
@@ -90,9 +91,9 @@ const Main = () => {
             color: 'white',
             backgroundColor: 'black',
             onPress: () => {
-                let result = parseInt(text);
-                result = result / 100
-            result = result.toString
+                let result = parseFloat(text);
+                result = result / 100;
+                result = result.toString();
                 {text == "0" ? null : setText(result)}
             }
         },

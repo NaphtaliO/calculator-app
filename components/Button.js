@@ -4,6 +4,8 @@ import React from 'react';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
+//calculator button component
+
 const Button = ({ onPress, backgroundColor, color, text }) => {
     return (
         <TouchableOpacity onPress={onPress}>
